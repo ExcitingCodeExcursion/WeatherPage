@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Weather and News Dashboard</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .iframe-container {
+      width: 90%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin: 5%;
+    }
+
+    @media (min-width: 800px) {
+      .iframe-container {
+        width: 45%;
+        margin: 2%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Weather iframes -->
+  <iframe class="iframe-container" src="https://weather.gc.ca/city/pages/nl-24_metric_e.html" title="Environment Canada"></iframe>
+    <iframe class="iframe-container" src="https://embed.windy.com/embed2.html?lat=47.598&lon=-52.690&detailLat=47.598&detailLon=-52.690&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=12&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+    <iframe class="iframe-container" src="https://ntv.ca/weather-centre/" title="NTV Weather Centre"></iframe>
+    <iframe class="iframe-container" src="https://www.accuweather.com/en/ca/st-johns/a1b/hourly-weather-forecast/49427" title="Accuweather"></iframe>
+  
+  <!-- News iframes -->
+  
+</body>
+</html>
